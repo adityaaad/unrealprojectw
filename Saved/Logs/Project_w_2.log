@@ -16961,3 +16961,687 @@ Sampler Limit: 32
 [2025.09.16-08.09.53:567][ 62]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
 [2025.09.16-08.09.53:567][ 62]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
 [2025.09.16-08.09.53:567][ 62]AssetCheck: /Game/Texture/M_SierBody Validating asset
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: ================================================
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Total job queries 17,467, among them cache hits 7,149 (40.93%), DDC hits 9,007 (51.57%), Duplicates 326 (1.87%)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Tracking 9,982 distinct input hashes that result in 8,987 distinct outputs (90.03%)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: RAM used: 6.08 MiB of 1.60 GiB budget. Usage: 0.37%
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Shaders Compiled: 975
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Jobs assigned 975, completed 975 (100%)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Average time worker was idle: 889.35 s
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Time job spent in pending queue: average 1.36 s, longest 14.23 s
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Job execution time: average 1.73 s, max 5.23 s
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Job life time (pending + execution): average 3.08 s, max 14.66
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Shader code size: average 7.762 KiB, min 1.938 KiB, max 20.758 KiB
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 217.08 s
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.04%
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Jobs were issued in 774 batches (only local compilation was used), average 1.26 jobs/batch
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Average processing rate: 4.49 jobs/sec
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Total thread time: 603.395 s
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Total thread preprocess time: 205.955 s
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Percentage time preprocessing: 34.13%
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Effective parallelization: 2.78 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display:                                             FDebugViewModePS (compiled   46 times, average 1.41 sec, max 1.85 sec, min 0.90 sec)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display:                   TMaterialCHSFNoLightMapPolicyFAnyHitShader (compiled   16 times, average 1.20 sec, max 1.89 sec, min 0.88 sec)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display:                                TMaterialCHSFNoLightMapPolicy (compiled   73 times, average 1.11 sec, max 1.46 sec, min 0.88 sec)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display:                                      FPathTracingMaterialCHS (compiled   21 times, average 1.00 sec, max 1.23 sec, min 0.79 sec)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display:                         TBasePassPSFNoLightMapPolicySkylight (compiled   37 times, average 0.65 sec, max 0.81 sec, min 0.50 sec)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display:                                TMaterialCHSFNoLightMapPolicy - 13.43% of total time (compiled   73 times, average 1.11 sec, max 1.46 sec, min 0.88 sec)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 13.09% of total time (compiled  123 times, average 0.64 sec, max 0.98 sec, min 0.44 sec)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display:                                             FDebugViewModePS - 10.73% of total time (compiled   46 times, average 1.41 sec, max 1.85 sec, min 0.90 sec)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 8.70% of total time (compiled  119 times, average 0.44 sec, max 0.62 sec, min 0.31 sec)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display:                                                 FLumenCardPS - 6.28% of total time (compiled   75 times, average 0.51 sec, max 0.74 sec, min 0.36 sec)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: === Material stats ===
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Materials Cooked:        0
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Materials Translated:    2049
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Material Total Translate Time: 0.80 s
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Material Translation Only: 0.44 s (55%)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: Material Cache Hits: 11 (1%)
+[2025.09.16-08.11.05:362][648]LogShaderCompilers: Display: ================================================
+[2025.09.16-08.11.38:367][747]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 84329.117188
+[2025.09.16-08.11.39:367][750]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-08.11.39:367][750]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 84329.789062, Update Interval: 351.798462
+[2025.09.16-08.14.02:513][179]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
+[2025.09.16-08.14.02:520][179]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/Maps/NewMap1/B/1U/K5163BPTMDX6HEXU0OWL4A_Auto1
+[2025.09.16-08.14.02:521][179]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/K5163BPTMDX6HEXU0OWL4A_Auto17491B11E482ABA24FCDC16A7E96BF7DF.tmp' to '../../../../../Procject x/Project_w/Saved/Autosaves/Game/__ExternalActors__/Maps/NewMap1/B/1U/K5163BPTMDX6HEXU0OWL4A_Auto1.uasset'
+[2025.09.16-08.14.02:521][179]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/NewMap1' took 0.033
+[2025.09.16-08.14.02:521][179]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.033
+[2025.09.16-08.18.19:737][951]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 84733.531250
+[2025.09.16-08.18.20:737][954]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-08.18.20:737][954]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 84734.203125, Update Interval: 304.575958
+[2025.09.16-08.24.13:108][ 11]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 85089.601562
+[2025.09.16-08.24.14:108][ 14]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-08.24.14:108][ 14]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 85090.273438, Update Interval: 326.913666
+[2025.09.16-08.30.13:565][ 93]LogDerivedDataCache: C:/Users/adity/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.000 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2025.09.16-08.30.37:147][163]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 85476.570312
+[2025.09.16-08.30.38:147][166]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-08.30.38:147][166]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 85477.242188, Update Interval: 330.552094
+[2025.09.16-08.36.42:186][258]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 85844.343750
+[2025.09.16-08.36.43:186][261]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-08.36.43:186][261]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 85845.015625, Update Interval: 358.086487
+[2025.09.16-08.43.35:562][498]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 86260.843750
+[2025.09.16-08.43.36:563][501]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-08.43.36:563][501]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 86261.515625, Update Interval: 359.392059
+[2025.09.16-08.50.20:612][713]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 86668.914062
+[2025.09.16-08.50.21:613][716]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-08.50.21:613][716]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 86669.585938, Update Interval: 317.710510
+[2025.09.16-08.56.33:989][833]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 87045.070312
+[2025.09.16-08.56.34:988][836]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-08.56.34:988][836]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 87045.742188, Update Interval: 345.933411
+[2025.09.16-09.03.02:697][999]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 87436.718750
+[2025.09.16-09.03.04:029][  3]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-09.03.04:031][  3]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 87437.726562, Update Interval: 308.699615
+[2025.09.16-09.08.52:068][ 47]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 87788.742188
+[2025.09.16-09.08.53:068][ 50]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-09.08.53:068][ 50]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 87789.414062, Update Interval: 340.546265
+[2025.09.16-09.15.10:771][183]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 88170.296875
+[2025.09.16-09.15.11:772][186]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-09.15.11:772][186]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 88170.968750, Update Interval: 342.150330
+[2025.09.16-09.21.37:142][342]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 88559.609375
+[2025.09.16-09.21.38:142][345]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-09.21.38:142][345]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 88560.281250, Update Interval: 303.272186
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 0 (Found bundle for host: 0x8379e040390 [serially])
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 2 (We are completely uploaded and fine)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 3 (TLSv1.3 (IN), TLS alert, close notify (256):)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 6 (Closing connection)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 7 (TLSv1.3 (OUT), TLS alert, close notify (256):)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B27BCBC23-4579-6E7F-06CD-508A27012AAA%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.5.4-40574608%2B%2B%2BUE5%2BRelease-5.5&UserID=5b9b16ce45e761a5ba51febd619a7efc%7C4be491afb7544bd2983221b62274c996%7C3127f341-d95e-42ce-b988-92e08b42c96e&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 9 (  Trying 100.24.90.43:443...)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (100.24.90.43) port 443)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 12 (SSL reusing session ID)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 15 (TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 16 (TLSv1.3 (IN), TLS handshake, Certificate (11):)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 17 (TLSv1.3 (IN), TLS handshake, CERT verify (15):)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 18 (TLSv1.3 (IN), TLS handshake, Finished (20):)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 19 (TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 20 (TLSv1.3 (OUT), TLS handshake, Finished (20):)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 21 (SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 22 (ALPN: server accepted http/1.1)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 23 (Server certificate:)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 24 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 25 ( start date: Feb  2 00:00:00 2025 GMT)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 26 ( expire date: Mar  3 23:59:59 2026 GMT)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 27 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 28 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 29 ( SSL certificate verify ok.)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 30 (using HTTP/1.1)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 31 (necessary data rewind wasn't possible)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 32 (Closing connection)
+[2025.09.16-09.22.51:154][564]LogHttp: Warning: 00000839B00D2A00: libcurl info message cache 33 (TLSv1.3 (OUT), TLS alert, close notify (256):)
+[2025.09.16-09.27.19:177][368]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 88904.195312
+[2025.09.16-09.27.20:176][371]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-09.27.20:176][371]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 88904.867188, Update Interval: 359.690552
+[2025.09.16-09.30.13:565][892]LogDerivedDataCache: C:/Users/adity/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.000 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2025.09.16-09.34.02:881][579]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 89310.945312
+[2025.09.16-09.34.03:882][582]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-09.34.03:882][582]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 89311.617188, Update Interval: 319.818115
+[2025.09.16-09.40.11:663][685]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 89682.507812
+[2025.09.16-09.40.12:662][688]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-09.40.12:662][688]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 89683.179688, Update Interval: 332.320923
+[2025.09.16-09.46.44:374][863]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 90078.203125
+[2025.09.16-09.46.45:374][866]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-09.46.45:374][866]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 90078.875000, Update Interval: 306.240417
+[2025.09.16-09.52.35:085][915]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 90431.554688
+[2025.09.16-09.52.36:085][918]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-09.52.36:085][918]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 90432.226562, Update Interval: 317.684875
+[2025.09.16-09.58.26:785][970]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 90785.906250
+[2025.09.16-09.58.27:786][973]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-09.58.27:786][973]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 90786.578125, Update Interval: 359.238251
+[2025.09.16-10.05.08:161][174]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 91190.312500
+[2025.09.16-10.05.09:161][177]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-10.05.09:162][177]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 91190.984375, Update Interval: 327.580200
+[2025.09.16-10.07.29:184][597]LogEOSSDK: LogEOSAuth: Refreshing authentication session. AccessTokenExpired: No RefreshRequired: Yes VerifyRequired: No UserId: 4be...996
+[2025.09.16-10.07.29:184][597]LogEOSSDK: LogEOSAuth: Refresh authentication session. AuthState: 1 AccessExpires: 99.89 RefreshExpires: 1.549e+07
+[2025.09.16-10.07.30:185][600]LogEOSSDK: LogEOSAuth: UpdateUserAuthToken: User ClientId: xyz...459 AccountId: 4be...996 Access[Expires: 2025.09.16-12.07.29 Remaining: 7200.77] Refresh[Expires: 2026-03-14T16:22:17.928Z Remaining: 15488088.93] State: Valid
+[2025.09.16-10.11.30:214][320]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 91575.265625
+[2025.09.16-10.11.31:214][323]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-10.11.31:214][323]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 91575.937500, Update Interval: 353.402496
+[2025.09.16-10.18.24:267][562]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 91992.437500
+[2025.09.16-10.18.25:267][565]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-10.18.25:267][565]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 91993.109375, Update Interval: 307.690674
+[2025.09.16-10.24.06:635][589]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 92337.382812
+[2025.09.16-10.24.07:636][592]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-10.24.07:636][592]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 92338.054688, Update Interval: 347.843262
+[2025.09.16-10.30.13:565][690]LogDerivedDataCache: C:/Users/adity/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.000 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2025.09.16-10.30.46:009][787]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 92739.742188
+[2025.09.16-10.30.47:009][790]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-10.30.47:009][790]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 92740.414062, Update Interval: 348.280884
+[2025.09.16-10.37.15:723][956]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 93132.335938
+[2025.09.16-10.37.16:723][959]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-10.37.16:723][959]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 93133.007812, Update Interval: 301.073029
+[2025.09.16-10.42.49:769][958]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 93468.890625
+[2025.09.16-10.42.50:769][961]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-10.42.50:769][961]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 93469.562500, Update Interval: 349.846497
+[2025.09.16-10.49.29:806][158]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 93871.937500
+[2025.09.16-10.49.30:805][161]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-10.49.30:805][161]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 93872.609375, Update Interval: 317.377228
+[2025.09.16-10.55.24:519][222]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 94229.304688
+[2025.09.16-10.55.25:519][225]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-10.55.25:519][225]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 94229.976562, Update Interval: 335.049286
+[2025.09.16-10.56.32:297][766]LogAssetEditorSubsystem: Opening Asset editor for MaterialInstanceConstant /Game/Texture/M_SierBody.M_SierBody
+[2025.09.16-10.56.32:299][766]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_35
+[2025.09.16-10.57.24:938][518]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2025.09.16-10.57.24:943][518]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/Maps/NewMap1/B/1U/K5163BPTMDX6HEXU0OWL4A_Auto2
+[2025.09.16-10.57.24:944][518]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/K5163BPTMDX6HEXU0OWL4A_Auto2D84BCF624DAA120B8F0FBB9CE24331ED.tmp' to '../../../../../Procject x/Project_w/Saved/Autosaves/Game/__ExternalActors__/Maps/NewMap1/B/1U/K5163BPTMDX6HEXU0OWL4A_Auto2.uasset'
+[2025.09.16-10.57.24:945][518]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/NewMap1' took 0.055
+[2025.09.16-10.57.24:945][518]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.055
+[2025.09.16-10.57.24:945][518]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Texture/M_SierBody] ([1] browsable assets)...
+[2025.09.16-10.57.24:961][518]OBJ SavePackage:     Rendered thumbnail for [MaterialInstanceConstant /Game/Texture/M_SierBody.M_SierBody]
+[2025.09.16-10.57.24:961][518]OBJ SavePackage: Finished generating thumbnails for package [/Game/Texture/M_SierBody]
+[2025.09.16-10.57.24:961][518]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Texture/M_SierBody" FILE="../../../../../Procject x/Project_w/Saved/Autosaves/Game/Texture/M_SierBody_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2025.09.16-10.57.24:983][518]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2025.09.16-10.57.25:011][518]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2025.09.16-10.57.25:014][518]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Texture/M_SierBody_Auto2
+[2025.09.16-10.57.25:014][518]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/M_SierBody_Auto26EFCDDEA43ACABB4637EEEA0083DE02E.tmp' to '../../../../../Procject x/Project_w/Saved/Autosaves/Game/Texture/M_SierBody_Auto2.uasset'
+[2025.09.16-10.57.25:015][518]LogFileHelpers: Auto-saving content packages took 0.071
+[2025.09.16-10.57.57:165][713]MaterialEditorStats: Texture samplers: 0/16
+[2025.09.16-10.57.57:165][713]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(4)
+[2025.09.16-10.57.57:165][713]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.57.57:165][713]MaterialEditorStats: Shader Count: 0
+[2025.09.16-10.57.57:165][713]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.57.57:264][715]MaterialEditorStats: Base pass shader: 209 instructions
+Stats: Resources Used: 8
+Resource Limit: 64
+Samplers Used: 5
+Sampler Limit: 32
+
+[2025.09.16-10.57.57:264][715]MaterialEditorStats: Base pass vertex shader: 151 instructions
+Stats: Resources Used: 5
+Resource Limit: 64
+Samplers Used: 0
+Sampler Limit: 32
+
+[2025.09.16-10.57.57:264][715]MaterialEditorStats: Texture samplers: 5/16
+[2025.09.16-10.57.57:264][715]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(4)
+[2025.09.16-10.57.57:264][715]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.57.57:264][715]MaterialEditorStats: Shader Count: 7
+[2025.09.16-10.57.57:264][715]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.58.05:858][ 36]MaterialEditorStats: Texture samplers: 0/16
+[2025.09.16-10.58.05:858][ 36]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(4)
+[2025.09.16-10.58.05:858][ 36]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.58.05:858][ 36]MaterialEditorStats: Shader Count: 0
+[2025.09.16-10.58.05:858][ 36]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.58.05:909][ 38]MaterialEditorStats: Base pass shader: 209 instructions
+Stats: Resources Used: 8
+Resource Limit: 64
+Samplers Used: 5
+Sampler Limit: 32
+
+[2025.09.16-10.58.05:909][ 38]MaterialEditorStats: Base pass vertex shader: 151 instructions
+Stats: Resources Used: 5
+Resource Limit: 64
+Samplers Used: 0
+Sampler Limit: 32
+
+[2025.09.16-10.58.05:909][ 38]MaterialEditorStats: Texture samplers: 5/16
+[2025.09.16-10.58.05:909][ 38]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(4)
+[2025.09.16-10.58.05:909][ 38]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.58.05:909][ 38]MaterialEditorStats: Shader Count: 7
+[2025.09.16-10.58.05:909][ 38]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.58.10:769][245]LogMaterial: Warning: [AssetLog] /Engine/Transient.M_Cell_Character: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game.
+	(Node VirtualTextureFeatureSwitch) Missing VirtualTextureFeatureSwitch input 'No'
+
+[2025.09.16-10.58.10:780][245]MaterialEditorStats: Error: [SM6] (Node VirtualTextureFeatureSwitch) Missing VirtualTextureFeatureSwitch input 'No'
+[2025.09.16-10.58.17:443][508]MaterialEditorStats: Texture samplers: 0/16
+[2025.09.16-10.58.17:443][508]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(4)
+[2025.09.16-10.58.17:443][508]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.58.17:443][508]MaterialEditorStats: Shader Count: 0
+[2025.09.16-10.58.17:443][508]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.58.17:543][510]MaterialEditorStats: Base pass shader: 209 instructions
+Stats: Resources Used: 8
+Resource Limit: 64
+Samplers Used: 5
+Sampler Limit: 32
+
+[2025.09.16-10.58.17:543][510]MaterialEditorStats: Base pass vertex shader: 151 instructions
+Stats: Resources Used: 5
+Resource Limit: 64
+Samplers Used: 0
+Sampler Limit: 32
+
+[2025.09.16-10.58.17:543][510]MaterialEditorStats: Texture samplers: 5/16
+[2025.09.16-10.58.17:543][510]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(4)
+[2025.09.16-10.58.17:543][510]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.58.17:543][510]MaterialEditorStats: Shader Count: 7
+[2025.09.16-10.58.17:543][510]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.58.25:518][848]LogMaterialEditor: Saving and Compiling material M_Cell_Character
+[2025.09.16-10.58.25:807][848]LogUObjectHash: Compacting FUObjectHashTables data took   1.43ms
+[2025.09.16-10.58.26:018][848]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2025.09.16-10.58.26:047][848]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.09.16-10.58.26:132][848]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Texture/M_Cell_Character] ([1] browsable assets)...
+[2025.09.16-10.58.26:155][848]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Texture/M_Cell_Character.M_Cell_Character]
+[2025.09.16-10.58.26:155][848]OBJ SavePackage: Finished generating thumbnails for package [/Game/Texture/M_Cell_Character]
+[2025.09.16-10.58.26:155][848]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Texture/M_Cell_Character" FILE="../../../../../Procject x/Project_w/Content/Texture/M_Cell_Character.uasset" SILENT=true
+[2025.09.16-10.58.26:159][848]LogSavePackage: Moving output files for package: /Game/Texture/M_Cell_Character
+[2025.09.16-10.58.26:160][848]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/M_Cell_Character22965A004E7CFCCB6D9E0B9A082F2604.tmp' to '../../../../../Procject x/Project_w/Content/Texture/M_Cell_Character.uasset'
+[2025.09.16-10.58.26:187][848]LogFileHelpers: InternalPromptForCheckoutAndSave took 140.033 ms (total: 39.7 sec)
+[2025.09.16-10.58.26:279][848]LogContentValidation: Display: Starting to validate 1 assets
+[2025.09.16-10.58.26:279][848]LogContentValidation: Enabled validators:
+[2025.09.16-10.58.26:279][848]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.09.16-10.58.26:279][848]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.09.16-10.58.26:279][848]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.09.16-10.58.26:279][848]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.09.16-10.58.26:279][848]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.09.16-10.58.26:279][848]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.09.16-10.58.26:279][848]AssetCheck: /Game/Texture/M_Cell_Character Validating asset
+[2025.09.16-10.58.26:369][848]MaterialEditorStats: Base pass shader: 209 instructions
+Stats: Resources Used: 8
+Resource Limit: 64
+Samplers Used: 5
+Sampler Limit: 32
+
+[2025.09.16-10.58.26:369][848]MaterialEditorStats: Base pass vertex shader: 151 instructions
+Stats: Resources Used: 5
+Resource Limit: 64
+Samplers Used: 0
+Sampler Limit: 32
+
+[2025.09.16-10.58.26:369][848]MaterialEditorStats: Base pass vertex shader: 291 instructions
+Stats: Resources Used: 4
+Resource Limit: 64
+Samplers Used: 0
+Sampler Limit: 32
+
+[2025.09.16-10.58.26:369][848]MaterialEditorStats: Texture samplers: 5/16
+[2025.09.16-10.58.26:369][848]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(4)
+[2025.09.16-10.58.26:369][848]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.58.26:369][848]MaterialEditorStats: Shader Count: 19
+[2025.09.16-10.58.26:369][848]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.58.35:550][207]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2025.09.16-10.58.37:181][207]LogSlate: Window 'Delete Assets' being destroyed
+[2025.09.16-10.58.38:800][207]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/Texture/M_SierBody.M_SierBody
+	Asset Type: MaterialInstanceConstant
+[2025.09.16-10.58.39:413][207]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2025.09.16-10.58.39:444][207]LogUObjectHash: Compacting FUObjectHashTables data took   1.46ms
+[2025.09.16-10.58.39:469][207]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2025.09.16-10.58.39:521][207]LogAutomationController: Ignoring very large delta of 4.00 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2025.09.16-10.58.49:307][462]LogContentBrowser: Deferred new asset file creation: M_Cell_Character_Inst
+[2025.09.16-10.58.49:326][462]LogContentBrowser: Creating deferred item: M_Cell_Character_Inst
+[2025.09.16-10.58.49:341][463]LogContentBrowser: Renaming the item being created (Deferred Item: M_Cell_Character_Inst).
+[2025.09.16-10.59.04:583][363]LogContentBrowser: Attempting asset rename: M_Cell_Character_Inst -> M_SierBody
+[2025.09.16-10.59.04:585][363]LogContentBrowser: End creating deferred item M_Cell_Character_Inst
+[2025.09.16-10.59.06:430][451]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.09.16-10.59.06:571][451]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Texture/M_SierBody] ([1] browsable assets)...
+[2025.09.16-10.59.06:624][451]OBJ SavePackage:     Rendered thumbnail for [MaterialInstanceConstant /Game/Texture/M_SierBody.M_SierBody]
+[2025.09.16-10.59.06:624][451]OBJ SavePackage: Finished generating thumbnails for package [/Game/Texture/M_SierBody]
+[2025.09.16-10.59.06:624][451]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Texture/M_SierBody" FILE="../../../../../Procject x/Project_w/Content/Texture/M_SierBody.uasset" SILENT=true
+[2025.09.16-10.59.06:625][451]LogSavePackage: Moving output files for package: /Game/Texture/M_SierBody
+[2025.09.16-10.59.06:625][451]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/M_SierBody61E396E14E33178F81E5A282E1958E1B.tmp' to '../../../../../Procject x/Project_w/Content/Texture/M_SierBody.uasset'
+[2025.09.16-10.59.06:651][451]LogFileHelpers: InternalPromptForCheckoutAndSave took 220.950 ms (total: 40.0 sec)
+[2025.09.16-10.59.06:729][451]LogContentValidation: Display: Starting to validate 1 assets
+[2025.09.16-10.59.06:729][451]LogContentValidation: Enabled validators:
+[2025.09.16-10.59.06:729][451]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.09.16-10.59.06:729][451]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.09.16-10.59.06:729][451]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.09.16-10.59.06:729][451]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.09.16-10.59.06:729][451]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.09.16-10.59.06:729][451]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.09.16-10.59.06:729][451]AssetCheck: /Game/Texture/M_SierBody Validating asset
+[2025.09.16-10.59.07:583][477]LogAssetEditorSubsystem: Opening Asset editor for MaterialInstanceConstant /Game/Texture/M_SierBody.M_SierBody
+[2025.09.16-10.59.07:584][477]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_36
+[2025.09.16-10.59.36:912][780]MaterialEditorStats: Texture samplers: 0/16
+[2025.09.16-10.59.36:912][780]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(3)
+[2025.09.16-10.59.36:912][780]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.59.36:912][780]MaterialEditorStats: Shader Count: 0
+[2025.09.16-10.59.36:912][780]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.59.38:665][859]MaterialEditorStats: Base pass vertex shader: 151 instructions
+Stats: Resources Used: 5
+Resource Limit: 64
+Samplers Used: 0
+Sampler Limit: 32
+
+[2025.09.16-10.59.38:665][859]MaterialEditorStats: Texture samplers: 3/16
+[2025.09.16-10.59.38:665][859]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(3)
+[2025.09.16-10.59.38:666][859]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.59.38:666][859]MaterialEditorStats: Shader Count: 3
+[2025.09.16-10.59.38:666][859]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.59.38:865][865]MaterialEditorStats: Base pass shader: 195 instructions
+Stats: Resources Used: 7
+Resource Limit: 64
+Samplers Used: 4
+Sampler Limit: 32
+
+[2025.09.16-10.59.38:865][865]MaterialEditorStats: Base pass vertex shader: 151 instructions
+Stats: Resources Used: 5
+Resource Limit: 64
+Samplers Used: 0
+Sampler Limit: 32
+
+[2025.09.16-10.59.38:865][865]MaterialEditorStats: Texture samplers: 4/16
+[2025.09.16-10.59.38:865][865]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(3)
+[2025.09.16-10.59.38:865][865]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.59.38:865][865]MaterialEditorStats: Shader Count: 4
+[2025.09.16-10.59.38:865][865]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.59.40:317][904]MaterialEditorStats: Texture samplers: 0/16
+[2025.09.16-10.59.40:317][904]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(4)
+[2025.09.16-10.59.40:317][904]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.59.40:317][904]MaterialEditorStats: Shader Count: 0
+[2025.09.16-10.59.40:317][904]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.59.40:361][906]MaterialEditorStats: Base pass shader: 209 instructions
+Stats: Resources Used: 8
+Resource Limit: 64
+Samplers Used: 5
+Sampler Limit: 32
+
+[2025.09.16-10.59.40:361][906]MaterialEditorStats: Base pass vertex shader: 151 instructions
+Stats: Resources Used: 5
+Resource Limit: 64
+Samplers Used: 0
+Sampler Limit: 32
+
+[2025.09.16-10.59.40:361][906]MaterialEditorStats: Texture samplers: 5/16
+[2025.09.16-10.59.40:361][906]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(4)
+[2025.09.16-10.59.40:361][906]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.59.40:361][906]MaterialEditorStats: Shader Count: 7
+[2025.09.16-10.59.40:361][906]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-10.59.42:258][990]LogMaterialEditor: Saving and Compiling material M_Cell_Character
+[2025.09.16-10.59.42:617][990]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2025.09.16-10.59.42:843][990]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2025.09.16-10.59.42:874][990]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.09.16-10.59.42:963][990]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Texture/M_Cell_Character] ([1] browsable assets)...
+[2025.09.16-10.59.42:986][990]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Texture/M_Cell_Character.M_Cell_Character]
+[2025.09.16-10.59.42:986][990]OBJ SavePackage: Finished generating thumbnails for package [/Game/Texture/M_Cell_Character]
+[2025.09.16-10.59.42:986][990]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Texture/M_Cell_Character" FILE="../../../../../Procject x/Project_w/Content/Texture/M_Cell_Character.uasset" SILENT=true
+[2025.09.16-10.59.42:989][990]LogSavePackage: Moving output files for package: /Game/Texture/M_Cell_Character
+[2025.09.16-10.59.42:990][990]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/M_Cell_CharacterB30938284F799996C10A5F81F3959FFF.tmp' to '../../../../../Procject x/Project_w/Content/Texture/M_Cell_Character.uasset'
+[2025.09.16-10.59.43:018][990]LogFileHelpers: InternalPromptForCheckoutAndSave took 144.027 ms (total: 40.1 sec)
+[2025.09.16-10.59.43:108][990]LogContentValidation: Display: Starting to validate 1 assets
+[2025.09.16-10.59.43:108][990]LogContentValidation: Enabled validators:
+[2025.09.16-10.59.43:108][990]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.09.16-10.59.43:108][990]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.09.16-10.59.43:108][990]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.09.16-10.59.43:108][990]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.09.16-10.59.43:108][990]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.09.16-10.59.43:108][990]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.09.16-10.59.43:108][990]AssetCheck: /Game/Texture/M_Cell_Character Validating asset
+[2025.09.16-10.59.43:200][990]MaterialEditorStats: Base pass shader: 209 instructions
+Stats: Resources Used: 8
+Resource Limit: 64
+Samplers Used: 5
+Sampler Limit: 32
+
+[2025.09.16-10.59.43:200][990]MaterialEditorStats: Base pass vertex shader: 151 instructions
+Stats: Resources Used: 5
+Resource Limit: 64
+Samplers Used: 0
+Sampler Limit: 32
+
+[2025.09.16-10.59.43:200][990]MaterialEditorStats: Base pass vertex shader: 291 instructions
+Stats: Resources Used: 4
+Resource Limit: 64
+Samplers Used: 0
+Sampler Limit: 32
+
+[2025.09.16-10.59.43:200][990]MaterialEditorStats: Texture samplers: 5/16
+[2025.09.16-10.59.43:200][990]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(4)
+[2025.09.16-10.59.43:200][990]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.09.16-10.59.43:200][990]MaterialEditorStats: Shader Count: 19
+[2025.09.16-10.59.43:200][990]MaterialEditorStats: Preshaders: 13  (13 param fetches, 18 ops)
+[2025.09.16-11.01.42:015][803]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 94594.257812
+[2025.09.16-11.01.42:399][826]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.09.16-11.01.42:399][826]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 94594.601562, Update Interval: 337.768494
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: ================================================
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Total job queries 17,568, among them cache hits 7,244 (41.23%), DDC hits 9,007 (51.27%), Duplicates 326 (1.86%)
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Tracking 9,988 distinct input hashes that result in 8,991 distinct outputs (90.02%)
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: RAM used: 6.08 MiB of 1.60 GiB budget. Usage: 0.37%
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Shaders Compiled: 981
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Jobs assigned 981, completed 981 (100%)
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Average time worker was idle: 961.83 s
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Time job spent in pending queue: average 1.35 s, longest 14.23 s
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Job execution time: average 1.73 s, max 5.23 s
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Job life time (pending + execution): average 3.08 s, max 14.66
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Shader code size: average 7.761 KiB, min 1.938 KiB, max 20.758 KiB
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 219.38 s
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.04%
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Jobs were issued in 780 batches (only local compilation was used), average 1.26 jobs/batch
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Average processing rate: 4.47 jobs/sec
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Total thread time: 607.421 s
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Total thread preprocess time: 207.495 s
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Percentage time preprocessing: 34.16%
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Effective parallelization: 2.77 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display:                                             FDebugViewModePS (compiled   46 times, average 1.41 sec, max 1.85 sec, min 0.90 sec)
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display:                   TMaterialCHSFNoLightMapPolicyFAnyHitShader (compiled   16 times, average 1.20 sec, max 1.89 sec, min 0.88 sec)
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display:                                TMaterialCHSFNoLightMapPolicy (compiled   74 times, average 1.11 sec, max 1.46 sec, min 0.88 sec)
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display:                                      FPathTracingMaterialCHS (compiled   21 times, average 1.00 sec, max 1.23 sec, min 0.79 sec)
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display:                         TBasePassPSFNoLightMapPolicySkylight (compiled   37 times, average 0.65 sec, max 0.81 sec, min 0.50 sec)
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.09.16-11.02.07:094][940]LogShaderCompilers: Display:                                TMaterialCHSFNoLightMapPolicy - 13.52% of total time (compiled   74 times, average 1.11 sec, max 1.46 sec, min 0.88 sec)
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 13.11% of total time (compiled  124 times, average 0.64 sec, max 0.98 sec, min 0.44 sec)
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display:                                             FDebugViewModePS - 10.66% of total time (compiled   46 times, average 1.41 sec, max 1.85 sec, min 0.90 sec)
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 8.72% of total time (compiled  120 times, average 0.44 sec, max 0.62 sec, min 0.31 sec)
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display:                                                 FLumenCardPS - 6.32% of total time (compiled   76 times, average 0.51 sec, max 0.74 sec, min 0.36 sec)
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display: === Material stats ===
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display: Materials Cooked:        0
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display: Materials Translated:    2062
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display: Material Total Translate Time: 0.80 s
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display: Material Translation Only: 0.44 s (55%)
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display: Material Cache Hits: 11 (1%)
+[2025.09.16-11.02.07:095][940]LogShaderCompilers: Display: ================================================
+[2025.09.16-11.02.15:127][977]LogMaterialEditor: Saving and Compiling material M_Cell_Character
+[2025.09.16-11.02.15:130][977]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.09.16-11.02.15:269][977]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Texture/M_Cell_Character] ([1] browsable assets)...
+[2025.09.16-11.02.15:269][977]OBJ SavePackage: Finished generating thumbnails for package [/Game/Texture/M_Cell_Character]
+[2025.09.16-11.02.15:269][977]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Texture/M_Cell_Character" FILE="../../../../../Procject x/Project_w/Content/Texture/M_Cell_Character.uasset" SILENT=true
+[2025.09.16-11.02.15:271][977]LogSavePackage: Moving output files for package: /Game/Texture/M_Cell_Character
+[2025.09.16-11.02.15:272][977]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/M_Cell_Character2C73F10D4A95A4697C73348EAF94410A.tmp' to '../../../../../Procject x/Project_w/Content/Texture/M_Cell_Character.uasset'
+[2025.09.16-11.02.15:322][977]LogFileHelpers: InternalPromptForCheckoutAndSave took 192.681 ms (total: 40.3 sec)
+[2025.09.16-11.02.15:411][977]LogContentValidation: Display: Starting to validate 1 assets
+[2025.09.16-11.02.15:411][977]LogContentValidation: Enabled validators:
+[2025.09.16-11.02.15:411][977]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.09.16-11.02.15:411][977]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.09.16-11.02.15:411][977]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.09.16-11.02.15:411][977]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.09.16-11.02.15:411][977]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.09.16-11.02.15:411][977]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.09.16-11.02.15:411][977]AssetCheck: /Game/Texture/M_Cell_Character Validating asset
+[2025.09.16-11.02.19:170][ 53]LogSlate: Window 'Message' being destroyed
+[2025.09.16-11.02.19:192][ 53]Message dialog closed, result: Yes, title: Message, text: Would you like to apply the changes of the modified material to the original material?
+/Game/Texture/Material/PostProcessor/PP_Cell.PP_Cell
+(Selecting 'No' will cause all changes to be lost!)
+[2025.09.16-11.02.19:283][ 53]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2025.09.16-11.02.19:388][ 53]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2025.09.16-11.02.19:446][ 53]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2025.09.16-11.02.21:687][ 53]LogSlate: Window 'Save Content' being destroyed
+[2025.09.16-11.02.21:714][ 53]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.09.16-11.02.21:801][ 53]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/BP_Basecharacter] ([2] browsable assets)...
+[2025.09.16-11.02.21:801][ 53]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/BP_Basecharacter]
+[2025.09.16-11.02.21:801][ 53]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Basecharacter" FILE="../../../../../Procject x/Project_w/Content/Blueprints/BP_Basecharacter.uasset" SILENT=true
+[2025.09.16-11.02.21:906][ 53]LogSavePackage: Moving output files for package: /Game/Blueprints/BP_Basecharacter
+[2025.09.16-11.02.21:906][ 53]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/BP_Basecharacter1D03C3704E3C833FC857AC836CFFA6E4.tmp' to '../../../../../Procject x/Project_w/Content/Blueprints/BP_Basecharacter.uasset'
+[2025.09.16-11.02.21:908][ 53]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Texture/Material/CellShading/M_Cell_Global] ([1] browsable assets)...
+[2025.09.16-11.02.21:908][ 53]OBJ SavePackage: Finished generating thumbnails for package [/Game/Texture/Material/CellShading/M_Cell_Global]
+[2025.09.16-11.02.21:908][ 53]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Texture/Material/CellShading/M_Cell_Global" FILE="../../../../../Procject x/Project_w/Content/Texture/Material/CellShading/M_Cell_Global.uasset" SILENT=true
+[2025.09.16-11.02.21:910][ 53]LogSavePackage: Moving output files for package: /Game/Texture/Material/CellShading/M_Cell_Global
+[2025.09.16-11.02.21:910][ 53]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/M_Cell_GlobalADC3C9A14A706DF9A606148F0B644FB4.tmp' to '../../../../../Procject x/Project_w/Content/Texture/Material/CellShading/M_Cell_Global.uasset'
+[2025.09.16-11.02.21:911][ 53]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Texture/M_SierBody] ([1] browsable assets)...
+[2025.09.16-11.02.21:934][ 53]OBJ SavePackage:     Rendered thumbnail for [MaterialInstanceConstant /Game/Texture/M_SierBody.M_SierBody]
+[2025.09.16-11.02.21:934][ 53]OBJ SavePackage: Finished generating thumbnails for package [/Game/Texture/M_SierBody]
+[2025.09.16-11.02.21:934][ 53]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Texture/M_SierBody" FILE="../../../../../Procject x/Project_w/Content/Texture/M_SierBody.uasset" SILENT=true
+[2025.09.16-11.02.21:956][ 53]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2025.09.16-11.02.21:984][ 53]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2025.09.16-11.02.21:988][ 53]LogSavePackage: Moving output files for package: /Game/Texture/M_SierBody
+[2025.09.16-11.02.21:988][ 53]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/M_SierBodyDA5E841D4B32EDBE6FD438BC8A89109A.tmp' to '../../../../../Procject x/Project_w/Content/Texture/M_SierBody.uasset'
+[2025.09.16-11.02.21:989][ 53]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Texture/Material/PostProcessor/PP_Cell] ([1] browsable assets)...
+[2025.09.16-11.02.22:034][ 53]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Texture/Material/PostProcessor/PP_Cell.PP_Cell]
+[2025.09.16-11.02.22:034][ 53]OBJ SavePackage: Finished generating thumbnails for package [/Game/Texture/Material/PostProcessor/PP_Cell]
+[2025.09.16-11.02.22:034][ 53]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Texture/Material/PostProcessor/PP_Cell" FILE="../../../../../Procject x/Project_w/Content/Texture/Material/PostProcessor/PP_Cell.uasset" SILENT=true
+[2025.09.16-11.02.22:041][ 53]LogSavePackage: Moving output files for package: /Game/Texture/Material/PostProcessor/PP_Cell
+[2025.09.16-11.02.22:041][ 53]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/PP_Cell49ACD4274507E7AF262649B3C865E6B6.tmp' to '../../../../../Procject x/Project_w/Content/Texture/Material/PostProcessor/PP_Cell.uasset'
+[2025.09.16-11.02.22:043][ 53]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Maps/NewMap1/B/1U/K5163BPTMDX6HEXU0OWL4A
+[2025.09.16-11.02.22:043][ 53]LogSavePackage: Moving '../../../../../Procject x/Project_w/Saved/K5163BPTMDX6HEXU0OWL4A9F17167B4F2EE8E46DCF9282C03A506C.tmp' to '../../../../../Procject x/Project_w/Content/__ExternalActors__/Maps/NewMap1/B/1U/K5163BPTMDX6HEXU0OWL4A.uasset'
+[2025.09.16-11.02.22:068][ 53]LogFileHelpers: InternalPromptForCheckoutAndSave took 353.485 ms (total: 40.6 sec)
+[2025.09.16-11.02.22:135][ 53]LogStall: Shutdown...
+[2025.09.16-11.02.22:135][ 53]LogStall: Shutdown complete.
+[2025.09.16-11.02.22:502][ 53]LogSlate: Window 'Project_w - Unreal Editor' being destroyed
+[2025.09.16-11.02.23:153][ 53]LogContentValidation: Display: Starting to validate 5 assets
+[2025.09.16-11.02.23:153][ 53]LogContentValidation: Enabled validators:
+[2025.09.16-11.02.23:153][ 53]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.09.16-11.02.23:153][ 53]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.09.16-11.02.23:153][ 53]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.09.16-11.02.23:153][ 53]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.09.16-11.02.23:153][ 53]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.09.16-11.02.23:153][ 53]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.09.16-11.02.23:153][ 53]AssetCheck: /Game/Blueprints/BP_Basecharacter Validating asset
+[2025.09.16-11.02.23:153][ 53]AssetCheck: /Game/Texture/Material/CellShading/M_Cell_Global Validating asset
+[2025.09.16-11.02.23:153][ 53]AssetCheck: /Game/Texture/M_SierBody Validating asset
+[2025.09.16-11.02.23:153][ 53]AssetCheck: /Game/Texture/Material/PostProcessor/PP_Cell Validating asset
+[2025.09.16-11.02.23:153][ 53]AssetCheck: /Game/Maps/NewMap1 Validating asset
+[2025.09.16-11.02.23:155][ 53]LogAutomationController: Ignoring very large delta of 5.83 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2025.09.16-11.02.23:156][ 53]Cmd: QUIT_EDITOR
+[2025.09.16-11.02.23:156][ 53]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2025.09.16-11.02.23:163][ 54]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2025.09.16-11.02.23:163][ 54]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2025.09.16-11.02.23:163][ 54]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2025.09.16-11.02.23:229][ 54]LogWorld: UWorld::CleanupWorld for NewMap1, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:230][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:230][ 54]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/Maps/NewMap1.NewMap1
+[2025.09.16-11.02.23:248][ 54]LogStylusInput: Shutting down StylusInput subsystem.
+[2025.09.16-11.02.23:251][ 54]LogLevelSequenceEditor: LevelSequenceEditor subsystem deinitialized.
+[2025.09.16-11.02.23:270][ 54]LogWorld: UWorld::CleanupWorld for World_34, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:270][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:275][ 54]LogWorld: UWorld::CleanupWorld for World_33, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:275][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:279][ 54]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:279][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:282][ 54]LogWorld: UWorld::CleanupWorld for World_31, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:282][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:289][ 54]LogWorld: UWorld::CleanupWorld for World_30, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:289][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:293][ 54]LogWorld: UWorld::CleanupWorld for World_29, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:293][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:296][ 54]LogWorld: UWorld::CleanupWorld for World_28, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:296][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:301][ 54]LogWorld: UWorld::CleanupWorld for World_27, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:302][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:306][ 54]LogWorld: UWorld::CleanupWorld for World_26, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:306][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:310][ 54]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:310][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:314][ 54]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:314][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:319][ 54]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:319][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:323][ 54]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:323][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:327][ 54]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:327][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:331][ 54]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:331][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:337][ 54]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:337][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:344][ 54]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:344][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:349][ 54]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:349][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:352][ 54]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:352][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:355][ 54]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:356][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:359][ 54]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:359][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:363][ 54]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:363][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:366][ 54]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:367][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:369][ 54]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:369][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:372][ 54]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:372][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:376][ 54]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:376][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:378][ 54]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:378][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:381][ 54]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:381][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:384][ 54]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:384][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:387][ 54]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:388][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:391][ 54]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:391][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:394][ 54]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:394][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:397][ 54]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:397][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:400][ 54]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:400][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:402][ 54]LogWorld: UWorld::CleanupWorld for World_35, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:402][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:405][ 54]LogWorld: UWorld::CleanupWorld for World_36, bSessionEnded=true, bCleanupResources=true
+[2025.09.16-11.02.23:405][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.16-11.02.23:410][ 54]LogStudioTelemetry: Ended StudioTelemetry Session
+[2025.09.16-11.02.23:418][ 54]LogAnalytics: Display: [UEEditor.Rocket.Release] Destroying ET Analytics provider
+[2025.09.16-11.02.23:418][ 54]LogAnalytics: Display: [UEEditor.Rocket.Release] Ended ET Analytics provider session
+[2025.09.16-11.02.23:418][ 54]LogAnalytics: Display: [UEEditor.Rocket.Release] Destroyed ET Analytics provider
+[2025.09.16-11.02.24:334][ 54]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2025.09.16-11.02.24:334][ 54]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2025.09.16-11.02.24:334][ 54]LogAudio: Display: Audio Device unregistered from world 'NewMap1'.
+[2025.09.16-11.02.24:334][ 54]LogAudio: Display: Shutting down audio device while 1 references to it are still alive. For more information, compile with INSTRUMENT_AUDIODEVICE_HANDLES.
+[2025.09.16-11.02.24:334][ 54]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2025.09.16-11.02.24:337][ 54]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2025.09.16-11.02.24:350][ 54]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID -1
+[2025.09.16-11.02.24:350][ 54]LogAudio: Display: Audio Device Manager Shutdown
+[2025.09.16-11.02.24:351][ 54]LogWindowsTextInputMethodSystem: Activated input method: English (United States) - (Keyboard).
+[2025.09.16-11.02.24:354][ 54]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2025.09.16-11.02.24:355][ 54]LogExit: Preparing to exit.
+[2025.09.16-11.02.24:462][ 54]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2025.09.16-11.02.24:526][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.add_controls_for_selected_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:526][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.add_controls_for_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:528][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_null_above_selected_PY.add_null_above_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_all' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_x' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_y' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_z' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_scale' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.search_replace_name_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.search_replace_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_prefix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_prefix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_suffix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_suffix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.do_rename_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:529][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.do_rename_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:530][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/set_bone_reference_pose_PY.set_bone_reference_pose' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:530][ 54]LogPython: Display: Object '/ControlRig/Python/ControlRigWorkflows/workflow_fbik_import_ik_rig_PY.import_ik_rig_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.24:530][ 54]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.ControlOutputFormat' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.09.16-11.02.25:886][ 54]LogEditorDataStorage: Deinitializing
+[2025.09.16-11.02.26:125][ 54]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2025.09.16-11.02.26:184][ 54]LogExit: Editor shut down
+[2025.09.16-11.02.26:193][ 54]LogExit: Transaction tracking system shut down
+[2025.09.16-11.02.26:682][ 54]LogExit: Object subsystem successfully closed.
+[2025.09.16-11.02.26:756][ 54]LogShaderCompilers: Display: Shaders left to compile 0
+[2025.09.16-11.02.27:344][ 54]LogMemoryProfiler: Shutdown
+[2025.09.16-11.02.27:344][ 54]LogNetworkingProfiler: Shutdown
+[2025.09.16-11.02.27:344][ 54]LoadingProfiler: Shutdown
+[2025.09.16-11.02.27:344][ 54]LogTimingProfiler: Shutdown
+[2025.09.16-11.02.27:855][ 54]LogChaosDD: Chaos Debug Draw Shutdown
+[2025.09.16-11.02.27:863][ 54]LogStudioTelemetry: Display: Shutdown StudioTelemetry Module
+[2025.09.16-11.02.27:863][ 54]LogNFORDenoise: NFORDenoise function shutting down
+[2025.09.16-11.02.27:865][ 54]RenderDocPlugin: plugin has been unloaded.
+[2025.09.16-11.02.27:906][ 54]LogHttp: Warning: [FHttpManager::Shutdown] Unbinding delegates for 1 outstanding Http Requests:
+[2025.09.16-11.02.27:906][ 54]LogHttp: Warning: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B27BCBC23-4579-6E7F-06CD-508A27012AAA%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.5.4-40574608%2B%2B%2BUE5%2BRelease-5.5&UserID=5b9b16ce45e761a5ba51febd619a7efc%7C4be491afb7544bd2983221b62274c996%7C3127f341-d95e-42ce-b988-92e08b42c96e&AppEnvironment=datacollector-binary&UploadType=eteventstream] refs=[2] status=Processing
+[2025.09.16-11.02.28:960][ 54]LogEOSSDK: FEOSSDKManager::Shutdown EOS_Shutdown Result=[EOS_Success]
+[2025.09.16-11.02.28:977][ 54]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetActorFactory id: 0
+[2025.09.16-11.02.28:978][ 54]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetSubObjectFactory id: 1
+[2025.09.16-11.02.28:978][ 54]LogPakFile: Destroying PakPlatformFile
+[2025.09.16-11.02.30:219][ 54]LogD3D12RHI: ~FD3D12DynamicRHI
+[2025.09.16-11.02.30:283][ 54]LogExit: Exiting.
+[2025.09.16-11.02.30:316][ 54]Log file closed, 09/16/25 18:02:30
